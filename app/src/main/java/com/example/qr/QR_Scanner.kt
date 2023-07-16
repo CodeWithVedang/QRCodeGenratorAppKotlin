@@ -30,7 +30,7 @@ class QR_Scanner : AppCompatActivity() {
                     Toast.makeText(this, "Cancelled", Toast.LENGTH_LONG).show()
                 } else {
                     val ResultText=findViewById<TextView>(R.id.ResultText)
-                    ResultText.text=result.toString()
+                    ResultText.text=result.contents.toString()
                     Toast.makeText(this, "Scanned: " + result.contents, Toast.LENGTH_LONG).show()
                 }
             } else {
