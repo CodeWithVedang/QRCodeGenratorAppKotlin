@@ -35,5 +35,13 @@
 
         android:layout_marginLeft="-2dp"
         android:text="Genrate" />
+    <Button
+        android:id="@+id/scanbtn"
+        android:layout_gravity="center"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+
+        android:layout_marginLeft="-2dp"
+        android:text=">>>>Scan QR >>>" />
 
 </androidx.appcompat.widget.LinearLayoutCompat>

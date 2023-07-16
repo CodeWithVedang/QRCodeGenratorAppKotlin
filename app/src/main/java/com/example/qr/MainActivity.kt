@@ -1,6 +1,7 @@
 package com.example.qr
 
 
+import android.content.Intent
 import android.graphics.Bitmap
 import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
@@ -20,7 +21,11 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
+        val scanbtn=findViewById<Button>(R.id.scanbtn)
+        scanbtn.setOnClickListener {
+            val Innten=Intent(this,QR_Scanner::class.java)
+            startActivity(Innten)
+        }
 
         ivQRcode=findViewById(R.id.ivQRCode)
         etData=findViewById(R.id.etData)
